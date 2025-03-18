@@ -60,7 +60,7 @@ To use the player, simply install it in your project. You can do this via npm or
 
 After installation, import the player into your React project:
 
-**import { PlayerVideoKunstomPro } from "player-video-kunstom-pro";**
+**import PlayerVideoKunstomPro from "player-video-kunstom-pro";**
 
 And add the player in your JSX:
 
@@ -70,38 +70,50 @@ And add the player in your JSX:
 
 After installing the package, you can use the player in your React project as follows:
 
+```javascript
 import React from "react";
-import { PlayerVideoKunstomPro } from "player-video-kunstom-pro";
+import PlayerVideoKunstomPro from "player-video-kunstom-pro";
 
-cons videoList = [
-{
-src: "https://www.w3schools.com/html/mov_bbb.mp4",
-type: "video/mp4",
-title: "Video di Test 1",
-},
-{
-src: "https://media.istockphoto.com/id/1697150103/it/video/guidare-sotto-la-pioggia-di-notte.mp4?s=mp4-640x640-is&k=20&c=virq68l1edFMhw55u_f15bdcx56hZQAQQ83RJBFBqzw=",
-type: "video/mp4",
-title: "Video di Test 2",
-},
-{
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
-type: "video/mp4",
-title: "Video di Test 3",
-qualities: [
-{
-label: "720p",
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
-type: "video/mp4",
-},
-{
-label: "360p",
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4",
-type: "video/mp4",
-},
-],
-},
+const videoList = [
+  {
+    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    type: "video/mp4",
+    title: "Video di Test 1",
+  },
+  {
+    src: "https://media.istockphoto.com/id/1697150103/it/video/guidare-sotto-la-pioggia-di-notte.mp4?s=mp4-640x640-is&k=20&c=virq68l1edFMhw55u_f15bdcx56hZQAQQ83RJBFBqzw=",
+    type: "video/mp4",
+    title: "Video di Test 2",
+  },
+  {
+    src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+    type: "video/mp4",
+    title: "Video di Test 3",
+    qualities: [
+      {
+        label: "720p",
+        src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+        type: "video/mp4",
+      },
+      {
+        label: "360p",
+        src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4",
+        type: "video/mp4",
+      },
+    ],
+  },
 ];
+
+const App = () => {
+  return (
+    <div className="App">
+      <PlayerVideoKunstomPro videoList={videoList} width={"1500px"} />
+    </div>
+  );
+};
+
+export default App;
+```
 
 ### Common Issues
 
@@ -172,7 +184,7 @@ Per utilizzare il player, basta installarlo nel tuo progetto. Puoi farlo tramite
 
 Dopo l'installazione, importa il player nel tuo progetto React:
 
-**import { PlayerVideoKunstomPro } from "player-video-kunstom-pro";**
+**import PlayerVideoKunstomPro from "player-video-kunstom-pro";**
 
 E aggiungi il player nel tuo JSX:
 
@@ -182,54 +194,50 @@ E aggiungi il player nel tuo JSX:
 
 Dopo aver installato il pacchetto, puoi utilizzare il player nel tuo progetto React come segue:
 
+```javascript
 import React from "react";
-import { PlayerVideoKunstomPro } from "player-video-kunstom-pro";
+import PlayerVideoKunstomPro from "player-video-kunstom-po";
 
-cons videoList = [
-{
-src: "https://www.w3schools.com/html/mov_bbb.mp4",
-type: "video/mp4",
-title: "Video di Test 1",
-},
-{
-src: "https://media.istockphoto.com/id/1697150103/it/video/guidare-sotto-la-pioggia-di-notte.mp4?s=mp4-640x640-is&k=20&c=virq68l1edFMhw55u_f15bdcx56hZQAQQ83RJBFBqzw=",
-type: "video/mp4",
-title: "Video di Test 2",
-},
-{
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
-type: "video/mp4",
-title: "Video di Test 3",
-qualities: [
-{
-label: "720p",
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
-type: "video/mp4",
-},
-{
-label: "360p",
-src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4",
-type: "video/mp4",
-},
-],
-},
+const videoList = [
+  {
+    src: "https://www.w3schools.com/html/mov_bbb.mp4",
+    type: "video/mp4",
+    title: "Video di Test 1",
+  },
+  {
+    src: "https://media.istockphoto.com/id/1697150103/it/video/guidare-sotto-la-pioggia-di-notte.mp4?s=mp4-640x640-is&k=20&c=virq68l1edFMhw55u_f15bdcx56hZQAQQ83RJBFBqzw=",
+    type: "video/mp4",
+    title: "Video di Test 2",
+  },
+  {
+    src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+    type: "video/mp4",
+    title: "Video di Test 3",
+    qualities: [
+      {
+        label: "720p",
+        src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4",
+        type: "video/mp4",
+      },
+      {
+        label: "360p",
+        src: "https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4",
+        type: "video/mp4",
+      },
+    ],
+  },
 ];
 
 const App = () => {
-return (
-
-<div className="App">
-<PlayerVideoKunstomPro
-        videoList={videoList}
-        autoplay={true}
-        size="50"
-        color="black"
-      />
-</div>
-);
+  return (
+    <div className="App">
+      <PlayerVideoKunstomPro videoList={videoList} width={"1500px"} />
+    </div>
+  );
 };
 
 export default App;
+```
 
 ### Problemi comuni
 

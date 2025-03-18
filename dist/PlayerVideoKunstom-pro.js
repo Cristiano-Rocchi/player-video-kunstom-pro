@@ -212,7 +212,7 @@ var PlayerVideoKunstomPro = function PlayerVideoKunstomPro(_ref) {
             skip30ForwardButton.addEventListener("click", function () {
               if (_this3.player_) {
                 var currentTime = _this3.player_.currentTime();
-                _this3.player_.currentTime(currentTime + 5);
+                _this3.player_.currentTime(currentTime + 30);
               }
             });
 
@@ -224,7 +224,7 @@ var PlayerVideoKunstomPro = function PlayerVideoKunstomPro(_ref) {
             skip10ForwardButton.addEventListener("click", function () {
               if (_this3.player_) {
                 var currentTime = _this3.player_.currentTime();
-                _this3.player_.currentTime(currentTime + 5);
+                _this3.player_.currentTime(currentTime + 10);
               }
             });
 
@@ -236,7 +236,7 @@ var PlayerVideoKunstomPro = function PlayerVideoKunstomPro(_ref) {
             skip30RewindButton.addEventListener("click", function () {
               if (_this3.player_) {
                 var currentTime = _this3.player_.currentTime();
-                _this3.player_.currentTime(currentTime - 5);
+                _this3.player_.currentTime(currentTime - 30);
               }
             });
 
@@ -248,7 +248,7 @@ var PlayerVideoKunstomPro = function PlayerVideoKunstomPro(_ref) {
             skip10RewindButton.addEventListener("click", function () {
               if (_this3.player_) {
                 var currentTime = _this3.player_.currentTime();
-                _this3.player_.currentTime(currentTime - 5);
+                _this3.player_.currentTime(currentTime - 10);
               }
             });
 
